@@ -1,8 +1,40 @@
-<Title>Under Construction | Punit</Title>
-<p style= "display: grid; min-height: 40vh; ">
-  <center>
-Hello Website is Under Construction. </br>
-Please contact <b>Punit</b> </br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <Title>Under Construction | Punit</Title>
+</head>
+<body>
+
+<marquee width="100%" style="color:white;background-image: linear-gradient(to bottom,#8d42ff,#563d7c);"><b> Website&nbsp; is&nbsp; Launching&nbsp;on &nbsp; <span id="oneMonthLate"></span></b></marquee>
+<center>
+<p style= "display: grid; min-height: 10vh; ">
+ 
+    <h1 style="font-size:100px">🏗️ </h1>
+    <h1>🚧 Website is Under Construction.🚧</h1>
+if any Query, Please contact 👨🏻‍💻 <b>Admin</b> </br>
 Instagtam - <a href="https://instagram.com/punitkaswan7">Click Here</a>
 </center>
 </p>
+</body>
+</html>
+
+
+<script>
+  const today = new Date();
+  const oneMonthLater = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+
+  function pad(number) {
+    return number.toString().padStart(2, '0');
+  }
+
+  const day = pad(oneMonthLater.getDate());
+  const month = pad(oneMonthLater.getMonth() + 1); // Months are zero-indexed
+  const year = oneMonthLater.getFullYear();
+
+  const formattedDate = day + "/" + month + "/" + year;
+  document.getElementById("oneMonthLate").textContent = formattedDate;
+</script>
